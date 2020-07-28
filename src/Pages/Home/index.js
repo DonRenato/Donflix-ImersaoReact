@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Menu from './Components/Menu';
-import dadosIniciais from './data/dados_iniciais.json';
-import BannerMain from './Components/BannerMain';
-import Carousel from './Components/Carousel';
-import Footer from './Components/Footer';
+import Menu from '../../Components/Menu';
+import dadosIniciais from '../../data/dados_iniciais.json';
+import BannerMain from '../../Components/BannerMain';
+import Carousel from '../../Components/Carousel';
+import Footer from '../../Components/Footer';
 
 const AppWrapper = styled.div`
   background: var(--grayDark);

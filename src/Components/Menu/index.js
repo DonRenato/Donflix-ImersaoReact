@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../assets/img/logo.png';
 import {LogoImage, MenuWrapper} from './styles.js'
 import Button from '../Button';
+import {Link} from 'react-router-dom';
 
 
 
@@ -9,10 +10,10 @@ import Button from '../Button';
 function Menu(){
     return(
         <MenuWrapper className="Menu" >
-            <a href="/">
+            <Link to="/">
                 <LogoImage src={logo} alt="DonFLIX logo" /> 
-            </a>
-            <Button as="a" className="ButtonLink" href="/">
+            </Link>
+            <Button as={Link} className="ButtonLink" to="/cadastro/videos">
                 Novo Vídeo
             </Button>
         </MenuWrapper>
