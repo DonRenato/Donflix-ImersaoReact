@@ -1,22 +1,21 @@
 import React from 'react';
 import logo from '../../assets/img/logo.png';
-
-import './styles.css';
+import {LogoImage, MenuWrapper} from './styles.js'
 import Button from '../Button';
-//import ButtonLink from '../ButtonLink';
+
+
 
 
 function Menu(){
     return(
-        <nav className="Menu" >
+        <MenuWrapper className="Menu" >
             <a href="/">
-                <img className="Logo" src={logo} alt="logotipo"/>
+                <LogoImage src={logo} alt="DonFLIX logo" /> 
             </a>
-
-            <Button as="a"className="ButtonLink" href="/">
-                Novo vídeo
+            <Button as="a" className="ButtonLink" href="/">
+                Novo Vídeo
             </Button>
-        </nav>
+        </MenuWrapper>
     );
 }
 
