@@ -47,7 +47,7 @@
       "titulo": "Back End",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
+        "text": "Cursos de Back End",
         "url": "https://www.alura.com.br/cursos-online-programacao"
       },
       "videos": [
@@ -76,6 +76,9 @@
     {
       "titulo": "Tecnologia",
       "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Vídeos sobre tecnologia"
+      },
       "videos": [
         {
           "titulo": "O NOVO MI MIX ALPHA DA XIAOMI! DUAS TELAS?! Loopcast 281!",
@@ -98,6 +101,9 @@
     {
       "titulo": "Músicas",
       "cor": "orange",
+      "link_extra": {
+        "text": "Algumas músicas"
+      },
       "videos": [
         {
           "titulo": "Johnny Cash - Hurt (Official Music Video)",
@@ -128,6 +134,9 @@
     {
       "titulo": "Games",
       "cor": "red",
+      "link_extra": {
+        "text": "Vídeos sobre games"
+      },
       "videos": [
         {
           "titulo": "Curta animado de Overwatch | “Honor and Glory”",
