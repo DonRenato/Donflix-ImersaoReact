@@ -10,12 +10,12 @@
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Como fazer SEO com React, NextJS e Deploy estático feat. Dicas de Performance | Pokedex #DevSoutinho",
+          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Utilizando o Hook do useEffect | Diego Fernandes",
+          "url": "https://www.youtube.com/watch?v=jcc9T-5inrk"
         },
         {
           "titulo": "Componentização com VanillaJS #AluraMais",
@@ -34,12 +34,12 @@
           "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          "titulo": "Estrutura de pastas para ReactJS/React Native | Code/Drops #02",
+          "url": "https://www.youtube.com/watch?v=X2RKRKdqqwM"
         },
         {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "React Hooks na prática | Diego Fernandes",
+          "url": "https://www.youtube.com/watch?v=6WB16wZS61c&t=1229s"
         }        
       ]
     },
@@ -52,102 +52,102 @@
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "[API NodeJS + Express + Mongo] Estrutura e cadastro | Diego Fernandes",
+          "url": "https://www.youtube.com/watch?v=BN_8bCfVp88&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=1"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "[API NodeJS + Express + Mongo] Autenticação | Diego Fernandes",
+          "url": "https://www.youtube.com/watch?v=KKTX1l3sZGk&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=2"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "[API NodeJS + Express + Mongo] Recuperação de senha com NodeMailer | Diego Fernandes",
+          "url": "https://www.youtube.com/watch?v=Zwdv9RllPqU&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=3"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "[API NodeJS + Express + Mongo] CRUD e relacionamentos com MongoDB | Diego Fernandes",
+          "url": "https://www.youtube.com/watch?v=GAZdUyIV3ms&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp&index=4"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Node.js 13 com suporte aos ESModules (import/export) | Code/Drops #08",
+          "url": "https://www.youtube.com/watch?v=0YRyi1BDWyw"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Tecnologia",
       "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "O NOVO MI MIX ALPHA DA XIAOMI! DUAS TELAS?! Loopcast 281!",
+          "url": "https://www.youtube.com/watch?v=sarzz8usS6w"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "A APPLE PÔE A INTEL PRA MAMAR? (Apple SILICON + FUTURO!)",
+          "url": "https://www.youtube.com/watch?v=YDdwjLR4OK0"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Dell XPS 13 2020: design e tecnologia de ponta com tela infinita [UNBOXING]",
+          "url": "https://www.youtube.com/watch?v=RJOtNoQOMUQ"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "A PLACA MÃE COM INTELIGÊNCIA ARTIFICIAL - ROG MAXIMUS XII EXTREME!",
+          "url": "https://www.youtube.com/watch?v=-s9QqIfF59A"
         }
       ]
     },
     {
-      "titulo": "Filmes",
+      "titulo": "Músicas",
       "cor": "orange",
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "Johnny Cash - Hurt (Official Music Video)",
+          "url": "https://www.youtube.com/watch?v=8AHCfZTRGiI"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Lochness - Judas Priest (FULL VERSION & LYRICS IN DESCRIPTION)",
+          "url": "https://www.youtube.com/watch?v=9ncnKjZzOPs"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Rhapsody Emerald Sword LEGENDADO-HD-",
+          "url": "https://www.youtube.com/watch?v=O43C1c4AO1Q&t=8s"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Chris Stapleton - Tennessee Whiskey (Audio)",
+          "url": "https://www.youtube.com/watch?v=4zAThXFOy2c"
+        },
+        {
+          "titulo": "[LIVE] 가호(Gaho) - 시작(Start) Band Ver. [이태원클라쓰 OST Part.2]",
+          "url": "https://www.youtube.com/watch?v=guhRIcHQikM"
+        },
+        {
+          "titulo": "The perfect song to sum up your day | Hospital Playlist Ep 7 [ENG SUB]",
+          "url": "https://www.youtube.com/watch?v=zYqJ-GsCtbk"
         }
       ]
     },
     {
       "titulo": "Games",
       "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Curta animado de Overwatch | “Honor and Glory”",
+          "url": "https://www.youtube.com/watch?v=M9xZ1nT8chQ"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "DUELISTAS // Trailer oficial de lançamento – VALORANT",
+          "url": "https://www.youtube.com/watch?v=e_E9W2vsRbQ"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          "titulo": "Warriors | Animação da Temporada 2020 - League of Legends (com 2WEI e Edda Hayes)",
+          "url": "https://www.youtube.com/watch?v=aR-KAldshAE"
         },
         {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+          "titulo": "Hyper Scape - Trailer de Gameplay",
+          "url": "https://www.youtube.com/watch?v=RoNpuwpVLLw"
         },
         {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "Curta animado de Overwatch | “Shooting Star”",
+          "url": "https://www.youtube.com/watch?v=zlEWKEQsgeQ"
         }
       ]
     },

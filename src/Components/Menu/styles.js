@@ -9,6 +9,8 @@ export const LogoImage = styled.img`
     }
 `;
 
+
+
 export const MenuWrapper = styled.nav`
     width:100%;
     height:94px;
