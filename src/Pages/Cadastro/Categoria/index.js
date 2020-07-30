@@ -1,31 +1,7 @@
 import React, { useState } from 'react';
 import PageDefault from '../../../Components/PageDefault';
 import FormField from '../../../Components/FormField';
-import styled from 'styled-components';
-
-const ButtonCad = styled.button`
-    width: 100%;
-    color: var(--primary);
-    border: 1px solid var(--primary);
-    padding: 16px 24px;
-    font-size: 16px;
-    border-radius:4px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: opacity .3s;
-    background-color: var(--black);
-   
-    &:hover,
-    &:focus {
-        opacity: 0.5;
-    }
-    `;
-
-
-
-
-
-
+import {ButtonCad, Title} from './styles';
 
 
 function CadastroCategoria() {
@@ -65,7 +41,7 @@ function CadastroCategoria() {
 
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria: {values.name}</h1>
+      <Title>Cadastro de Categoria: {values.name}</Title>
 
   <form onSubmit={handlerOnSubmit}>
     

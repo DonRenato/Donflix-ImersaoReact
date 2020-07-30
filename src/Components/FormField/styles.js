@@ -8,9 +8,16 @@ export const Field = styled.div`
 
 export const FieldContainer = styled.label`
     margin-bottom: 20px;
-    width: 100%;
+    width: 50%;
     display: flex;
-    align-items: center;
+    margin-left:25%;
+    margin-right:25%;
+
+    @media (max-width:800px){
+        width:100%;
+        margin-left:0;
+       margin-right:0;
+    }
 `;
 
 export const Input = styled.input`

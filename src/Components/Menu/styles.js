@@ -31,6 +31,7 @@ export const MenuWrapper = styled.nav`
     
 
     @media ( max-width: 800px){
+        padding-top:5px;
         height: 40px;
         justify-content: center;
     }

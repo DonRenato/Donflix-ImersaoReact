@@ -44,7 +44,7 @@ ContentAreaContainer.Title = styled.h2`
 
 export const BannerMainContainer = styled.section`
   height: 80vh;
-  color: var(--white);
+  color: #d45959;
   background-image: ${({backgroundImage}) => `url(${backgroundImage})`};
   background-size: cover;
   background-position: center;
