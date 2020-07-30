@@ -54,15 +54,16 @@ function CadastroCategoria() {
     />
 
     <FormField
-      type="textare"
+      type='textarea'
       name='description'
       value={values.description}
       onChange={handleChangeFields}
       placeholder="Descrição"
+      
     />
   
     <FormField
-      type="color"
+      type='color'
       name='color'
       value={values.color}
       onChange={handleChangeFields}

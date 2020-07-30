@@ -2,7 +2,7 @@ import React from 'react';
 import {Field, FieldContainer, Input} from './styles';
 
 
-function FormField({ type, value, name, onChange, placeholder }){
+function FormField({type, value, name, onChange, placeholder }){
     return(
     <Field>
       <FieldContainer>
