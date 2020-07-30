@@ -28,6 +28,7 @@ export const ButtonCad = styled.button`
 
 export const Title = styled.h1`
 @media (min-width:800px){
-  margin-left:35%;
+  margin-left:39.5%;
+  
 }
 `;
