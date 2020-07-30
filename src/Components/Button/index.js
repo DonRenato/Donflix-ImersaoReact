@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-color: var(--primary);
+    
+    color: var(--primary);
     border: 1px solid var(--primary);
     padding: 16px 24px;
     font-size: 16px;
@@ -9,6 +10,9 @@ color: var(--primary);
     font-weight: bold;
     text-decoration: none;
     transition: opacity .3s;
+    
+    
+   
     &:hover,
     &:focus {
         opacity: 0.5;

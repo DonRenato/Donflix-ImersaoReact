@@ -1,7 +1,31 @@
 import React, { useState } from 'react';
 import PageDefault from '../../../Components/PageDefault';
-import { Link } from 'react-router-dom';
 import FormField from '../../../Components/FormField';
+import styled from 'styled-components';
+
+const ButtonCad = styled.button`
+    width: 100%;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius:4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: opacity .3s;
+    background-color: var(--black);
+   
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
+    `;
+
+
+
+
+
+
 
 
 function CadastroCategoria() {
@@ -46,32 +70,31 @@ function CadastroCategoria() {
   <form onSubmit={handlerOnSubmit}>
     
     <FormField
-      label="Nome da Categoria"
       type='text'
       name='name'
       value={values.name}
       onChange={handleChangeFields}
+      placeholder="Nome da Categoria"
     />
 
     <FormField
-      label="Descrição"
       type="textare"
       name='description'
       value={values.description}
       onChange={handleChangeFields}
+      placeholder="Descrição"
     />
   
     <FormField
-      label="Cor"
       type="color"
       name='color'
       value={values.color}
       onChange={handleChangeFields}
     />
 
-    <button>
+    <ButtonCad>
       Cadastrar
-    </button>
+    </ButtonCad>
   </form>
 
   <ul>
@@ -85,9 +108,7 @@ function CadastroCategoria() {
     })}
   </ul>
 
-    <Link to="/">
-        Ir para home
-    </Link>
+   
 
   </PageDefault>
   );

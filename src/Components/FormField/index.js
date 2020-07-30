@@ -1,18 +1,20 @@
 import React from 'react';
+import {Field, FieldContainer, Input} from './styles';
 
-function FormField({ label, type, value, name, onChange }){
+
+function FormField({ label, type, value, name, onChange, placeholder }){
     return(
-        <div>
-    <label>
-      {label}:
-      <input
-        type={type}
-        value = {value}
-        name={name}
-        onChange={onChange}
-      />
-    </label>
-  </div>
+    <Field>
+      <FieldContainer>
+        <Input
+          type={type}
+          value = {value}
+          name={name}
+          onChange={onChange}
+          placeholder={placeholder}
+        />
+      </FieldContainer>
+    </Field>
     );
 }
 
