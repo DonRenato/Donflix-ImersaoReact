@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const ButtonCad = styled.button`
     width: 50%;
-    color: var(--primary);
-    border: 1px solid var(--primary);
+    color: var(--white);
+    border: 1px solid var(--white);
     padding: 16px 24px;
     font-size: 16px;
     border-radius:4px;
