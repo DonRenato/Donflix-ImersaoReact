@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PageDefault from '../../../Components/PageDefault';
-import FormField from '../../../Components/FormField';
+import InputText from '../../../Components/InputText';
+import TxtArea from '../../../Components/TtxArea';
 import {ButtonCad, Title} from './styles';
 
 
@@ -45,7 +46,7 @@ function CadastroCategoria() {
 
   <form onSubmit={handlerOnSubmit}>
     
-    <FormField
+    <InputText
       type='text'
       name='name'
       value={values.name}
@@ -53,16 +54,17 @@ function CadastroCategoria() {
       placeholder="Nome da Categoria"
     />
 
-    <FormField
+    <TxtArea
       type='textarea'
       name='description'
       value={values.description}
       onChange={handleChangeFields}
       placeholder="Descrição"
       
+      
     />
   
-    <FormField
+    <InputText
       type='color'
       name='color'
       value={values.color}

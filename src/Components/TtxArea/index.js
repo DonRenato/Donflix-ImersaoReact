@@ -1,21 +1,23 @@
 import React from 'react';
-import {Field, FieldContainer, Input} from './styles';
+import {Field, FieldContainer, TextArea} from './styles';
 
 
-function FormField({type, value, name, onChange, placeholder }){
+function TxtArea({rows,type, value, name, onChange, placeholder }){
     return(
     <Field>
       <FieldContainer>
-        <Input
+        <TextArea
           type={type}
           value = {value}
           name={name}
           onChange={onChange}
           placeholder={placeholder}
+          rows='4'
         />
+        
       </FieldContainer>
     </Field>
     );
 }
 
-export default FormField;
+export default TxtArea;
