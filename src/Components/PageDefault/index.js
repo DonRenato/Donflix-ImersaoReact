@@ -1,8 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 import Menu from '../Menu';
 import Footer from '../Footer';
-import styled from 'styled-components';
-
 
 const Main = styled.main`
     background-color: var(--black);
@@ -15,18 +14,18 @@ const Main = styled.main`
 
 `;
 
+// eslint-disable-next-line react/prop-types
 function PageDefault({ children }) {
-    return (
-      <>
-        <Menu />
-            <Main>
-                 {children}
-            </Main>
-            
-          
-        <Footer />
-      </>
-    );
-  }
+  return (
+    <>
+      <Menu />
+      <Main>
+        {children}
+      </Main>
+
+      <Footer />
+    </>
+  );
+}
 
 export default PageDefault;

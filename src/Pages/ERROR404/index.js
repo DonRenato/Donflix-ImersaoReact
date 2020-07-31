@@ -1,21 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageDefault from '../../Components/PageDefault';
 import erro from '../../assets/img/erro.png';
-import {Image404} from './styles.js'
+import { Image404 } from './styles';
 
-import {Link} from 'react-router-dom';
+function ERROR404() {
+  return (
+    <PageDefault>
+      <Link to="/">
+        <Image404 src={erro} alt="error" />
+      </Link>
 
-
-
-function ERROR404(){
-    return(
-        <PageDefault>
-        <Link to="/">
-            <Image404 src={erro} alt="error" />    
-        </Link>
-           
-        </PageDefault>
-    );
+    </PageDefault>
+  );
 }
 
 export default ERROR404;

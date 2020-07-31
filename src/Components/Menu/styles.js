@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const LogoImage = styled.img`
     max-width: 168px;
 
@@ -8,8 +7,6 @@ export const LogoImage = styled.img`
         max-width: 105px;
     }
 `;
-
-
 
 export const MenuWrapper = styled.nav`
     width:100%;
@@ -36,4 +33,3 @@ export const MenuWrapper = styled.nav`
         justify-content: center;
     }
 `;
-

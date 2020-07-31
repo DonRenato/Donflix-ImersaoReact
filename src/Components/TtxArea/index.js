@@ -1,23 +1,44 @@
 import React from 'react';
-import {Field, FieldContainer, TextArea} from './styles';
+import PropTypes from 'prop-types';
+import {
+  FieldWrapper, FieldContainer, TextArea, Label,
+} from './styles';
 
-
-function TxtArea({rows,type, value, name, onChange, placeholder }){
-    return(
-    <Field>
+function TxtArea({
+  type, value, name, onChange, label,
+}) {
+  return (
+    <FieldWrapper>
       <FieldContainer>
         <TextArea
           type={type}
-          value = {value}
+          value={value}
           name={name}
           onChange={onChange}
-          placeholder={placeholder}
-          rows='4'
+          rows="4"
         />
-        
+        <Label>
+          {label}
+          :
+        </Label>
+
       </FieldContainer>
-    </Field>
-    );
+    </FieldWrapper>
+  );
 }
+
+TxtArea.defaultProps = {
+  type: 'text',
+  value: '',
+  onChange: () => {},
+};
+
+TxtArea.propTypes = {
+  type: PropTypes.string,
+  value: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
+  label: PropTypes.string.isRequired,
+};
 
 export default TxtArea;

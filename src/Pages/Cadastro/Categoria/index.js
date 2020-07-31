@@ -1,19 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../Components/PageDefault';
 import InputText from '../../../Components/InputText';
 import TxtArea from '../../../Components/TtxArea';
-import {ButtonCad, Title} from './styles';
-
+import { ButtonCad, Title } from './styles';
 
 function CadastroCategoria() {
   const initialValues = {
     name: '',
     description: '',
     color: '',
-  }
+  };
   const [categories, setCategories] = useState([]);
 
   const [values, setValues] = useState(initialValues);
+
+  useEffect(() => {
+    const url = 'http://localhost:8080/categoria';
+    fetch(url).then(async (data) => {
+      const resp = await data.json();
+      setCategories([
+        ...resp,
+      ]);
+    });
+  }, []);
 
   function setValue(key, value) {
     setValues({
@@ -21,7 +30,7 @@ function CadastroCategoria() {
       [key]: value,
     });
   }
-  
+
   function handleChangeFields(e) {
     setValue(
       e.target.getAttribute('name'),
@@ -29,67 +38,76 @@ function CadastroCategoria() {
     );
   }
 
-
   function handlerOnSubmit(e) {
     e.preventDefault();
     setCategories([
       ...categories,
-      values
-    ]
-    );
+      values,
+    ]);
     setValues(initialValues);
   }
 
   return (
     <PageDefault>
-      <Title>Cadastro de Categoria: {values.name}</Title>
+      <Title>
+        Cadastro de Categoria:
+        {values.name}
+      </Title>
 
-  <form onSubmit={handlerOnSubmit}>
-    
-    <InputText
-      type='text'
-      name='name'
-      value={values.name}
-      onChange={handleChangeFields}
-      placeholder="Nome da Categoria"
-    />
+      <form onSubmit={handlerOnSubmit}>
 
-    <TxtArea
-      type='textarea'
-      name='description'
-      value={values.description}
-      onChange={handleChangeFields}
-      placeholder="Descrição"
-      
-      
-    />
-  
-    <InputText
-      type='color'
-      name='color'
-      value={values.color}
-      onChange={handleChangeFields}
-    />
+        <InputText
+          type="text"
+          name="name"
+          value={values.name}
+          onChange={handleChangeFields}
+          label="Nome da Categoria"
+        />
 
-    <ButtonCad>
-      Cadastrar
-    </ButtonCad>
-  </form>
+        <TxtArea
+          type="textarea"
+          name="description"
+          value={values.description}
+          onChange={handleChangeFields}
+          label="Descrição"
+        />
 
-  <ul>
-    {categories.map((category, i) => {
-      return (
-        <li key={`${category}${i}`}>
-          {category.name} - {category.description} - {category.color}
+        <InputText
+          type="color"
+          name="color"
+          value={values.color}
+          onChange={handleChangeFields}
+          label="cor"
+        />
+
+        <ButtonCad>
+          Cadastrar
+        </ButtonCad>
+      </form>
+
+      {categories.length === 0 && (
+      <div>
+        Loading....
+      </div>
+      )}
+
+      <ul>
+        {categories.map((category, i) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <li key={`${category}${i}`}>
+            {category.name}
+            {' '}
+            -
+            {category.description}
+            {' '}
+            -
+            {category.color}
           </li>
 
-          );
-    })}
-  </ul>
+        ))}
+      </ul>
 
-   
-
-  </PageDefault>
+    </PageDefault>
   );
 }
 

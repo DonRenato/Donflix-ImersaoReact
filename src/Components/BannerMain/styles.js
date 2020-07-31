@@ -22,7 +22,6 @@ ContentAreaContainer.Item = styled.div`
   }
 `;
 
-
 ContentAreaContainer.Description = styled.p`
   @media (max-width: 800px) {
       display: none;
@@ -45,7 +44,7 @@ ContentAreaContainer.Title = styled.h2`
 export const BannerMainContainer = styled.section`
   height: 80vh;
   color: #d45959;
-  background-image: ${({backgroundImage}) => `url(${backgroundImage})`};
+  background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
   background-size: cover;
   background-position: center;
  

@@ -26,7 +26,7 @@ export const ButtonCad = styled.button`
     }
     `;
 
-    export const Title = styled.h1`
+export const Title = styled.h1`
     @media (min-width:800px){
         position:relative;
         left: 25%;
