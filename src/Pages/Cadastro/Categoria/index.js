@@ -15,8 +15,8 @@ function CadastroCategoria() {
   const [values, setValues] = useState(initialValues);
 
   useEffect(() => {
-    const url = 'https://donflix.herokuapp.com/categoria';
-    fetch(url).then(async (data) => {
+    const URL = 'https://donflix.herokuapp.com/categoria';
+    fetch(URL).then(async (data) => {
       const resp = await data.json();
       setCategories([
         ...resp,
