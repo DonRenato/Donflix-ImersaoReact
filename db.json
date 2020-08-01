@@ -2,13 +2,13 @@
    "categoria": [
     {
         "id":"1",
-        "title":"Front end",
+        "name":"Front end",
         "description":"uma categoria bacanuda",
         "color": "cbd1ff"
     },
     {
      "id":"2",
-     "title":"bubu",
+     "name":"bubu",
      "description":"outra categoria bacanuda",
      "color": "cbd1ff"
     }
