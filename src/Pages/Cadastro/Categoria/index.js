@@ -19,7 +19,9 @@ function CadastroCategoria() {
     fetch(URL).then(async (data) => {
       const resp = await data.json();
       console.log(resp);
-      setCategories(resp);
+      setCategories([
+        ...resp,
+      ]);
     });
   }, []);
 
@@ -95,8 +97,6 @@ function CadastroCategoria() {
           // eslint-disable-next-line react/no-array-index-key
           <li key={`${category}${i}`}>
             {category.name}
-            {' '}
-            apareceu
           </li>
 
         ))}
