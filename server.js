@@ -10,5 +10,5 @@ server.use(middleware);
 server.use(router);
 server.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(`JSON server is running on ${port} `);
+  console.log(`JSON server is running in ${port} `);
 });

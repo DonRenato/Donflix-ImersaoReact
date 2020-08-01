@@ -2,15 +2,15 @@
    "categoria": [
     {
         "id":"1",
-        "name":"Front end",
+        "title":"Front end",
         "description":"uma categoria bacanuda",
         "color": "cbd1ff"
     },
     {
      "id":"2",
-     "name":"Back end",
+     "title":"Back end",
      "description":"outra categoria bacanuda",
      "color": "cbd1ff"
- }
+    }
    ]
 }
