@@ -97,12 +97,6 @@ function CadastroCategoria() {
           // eslint-disable-next-line react/no-array-index-key
           <li key={`${category}${i}`}>
             {category.name}
-            {' '}
-            -
-            {category.description}
-            {' '}
-            -
-            {category.color}
           </li>
 
         ))}
