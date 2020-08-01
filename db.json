@@ -3,14 +3,14 @@
     {
         "id":"1",
         "name":"Front end",
-        "descricao":"uma categoria bacanuda",
-        "cor": "cbd1ff"
+        "description":"uma categoria bacanuda",
+        "color": "cbd1ff"
     },
     {
      "id":"2",
      "name":"Back end",
-     "descricao":"outra categoria bacanuda",
-     "cor": "cbd1ff"
+     "description":"outra categoria bacanuda",
+     "color": "cbd1ff"
  }
    ]
 }
