@@ -1,7 +1,7 @@
 import configs from '../config';
 
-const URL_CATEGORIESWITHVIDEO = `${configs.URL_BACKEND}/categorias?_embed=videos`;
-const URL_CATEGORIES = `${configs.URL_BACKEND}/categorias`;
+const URL_CATEGORIESWITHVIDEO = `${configs.URL_BACKEND_2}/categorias?_embed=videos`;
+const URL_CATEGORIES = `${configs.URL_BACKEND_2}/categorias`;
 
 function getAllCategoriesWithVideos() {
   return fetch(URL_CATEGORIESWITHVIDEO).then(async (data) => {
