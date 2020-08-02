@@ -1,68 +1,46 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import PageDefault from '../../../Components/PageDefault';
 import InputText from '../../../Components/InputText';
 import TxtArea from '../../../Components/TtxArea';
 import { ButtonCad, Title } from './styles';
+import useForm from '../../../hooks/useForm';
+import categoryRepository from '../../../repositories/categories';
 
 function CadastroCategoria() {
   const initialValues = {
-    name: '',
+    title: '',
     description: '',
     color: '',
   };
-  const [categories, setCategories] = useState([]);
-
-  const [values, setValues] = useState(initialValues);
-
-  useEffect(() => {
-    const URL = window.location.hostname.includes('hostname')
-      ? 'http://localhost:8080/categoria'
-      : 'https://donflix.herokuapp.com/categoria';
-    fetch(URL).then(async (data) => {
-      const resp = await data.json();
-      console.log(resp);
-      setCategories([
-        ...resp,
-      ]);
-    });
-  }, []);
-
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-
-  function handleChangeFields(e) {
-    setValue(
-      e.target.getAttribute('name'),
-      e.target.value,
-    );
-  }
+  const history = useHistory();
+  const { handleChangeFields, values, clearForm } = useForm(initialValues);
 
   function handlerOnSubmit(e) {
     e.preventDefault();
-    setCategories([
-      ...categories,
-      values,
-    ]);
-    setValues(initialValues);
+    categoryRepository.create({
+      title: values.title,
+      description: values.description,
+      color: values.color,
+    }).then(() => {
+      console.log('Cadastrou com sucesso');
+    });
+    clearForm();
+    history.push('/cadastro/videos');
   }
 
   return (
     <PageDefault>
       <Title>
         Cadastro de Categoria:
-        {values.name}
       </Title>
 
       <form onSubmit={handlerOnSubmit}>
 
         <InputText
           type="text"
-          name="name"
-          value={values.name}
+          name="title"
+          value={values.title}
           onChange={handleChangeFields}
           label="Nome da Categoria"
         />
@@ -87,26 +65,6 @@ function CadastroCategoria() {
           Cadastrar
         </ButtonCad>
       </form>
-
-      {categories.length === 0 && (
-      <div>
-        Loading....
-      </div>
-      )}
-
-      <ul>
-        {categories.map((category) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <li key={`${category.id}`}>
-            {category.name}
-            {' '}
-            -
-            {' '}
-            {category.description}
-          </li>
-
-        ))}
-      </ul>
 
     </PageDefault>
   );

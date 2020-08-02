@@ -11,6 +11,7 @@ const Main = styled.main`
     padding-top: 100px;
     padding-left: 5%;
     padding-right: 5%;
+   
 
 `;
 
