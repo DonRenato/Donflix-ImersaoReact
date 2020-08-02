@@ -1,6 +1,6 @@
 import configs from '../config';
 
-const URL_VIDEOS = `${configs.URL_BACKEND}/videos`;
+const URL_VIDEOS = `${configs.URL_BACKEND_2}/videos`;
 
 function create(videoObj) {
   return fetch(`${URL_VIDEOS}?_embed=videos`, {
