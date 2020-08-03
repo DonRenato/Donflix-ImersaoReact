@@ -63,6 +63,7 @@ export const BannerMainContainer = styled.section`
 export const WatchButton = styled.button`
   cursor: pointer;
   padding: 16px 24px;
+  max-width: 90px;
   font-weight:bold;
   outline: none;
   border: 0;
@@ -73,6 +74,7 @@ export const WatchButton = styled.button`
   margin-left: auto;
   margin-right: auto;
   display: none;
+  text-decoration: none;
 
   @media (max-width: 800px) {
     display: block;
